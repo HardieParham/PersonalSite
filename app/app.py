@@ -2,16 +2,16 @@
 
 # External Imports
 from flask import Flask
-from flask_bootstrap import Bootstrap
+#from flask_bootstrap import Bootstrap
 
 # Local Imports
-from app.views import create_views
+from app.extensions.views import create_views
 
 
 class Factory:
     def create_app():
         app = Flask(__name__)
-        Bootstrap(app)        
+        #Bootstrap(app)        
         create_views(app)
 
         return app
