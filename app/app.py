@@ -1,6 +1,9 @@
 from flask import Flask, render_template, jsonify, request, url_for
 
 
+
+
+
 app = Flask(__name__)
 
 
@@ -8,6 +11,60 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
     
+
+@app.route('/hobbies', methods=['GET'])
+def hobbies():
+    if request.method == 'GET':
+        image_route='../static/images/'
+        data = {
+            "card-heading": "Test-Heading",
+            "card-image": f"{image_route}what.png",
+            "card-description": "Test description",
+        }
+        return jsonify(data)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @app.route('/card', methods=['GET'])
 def card():

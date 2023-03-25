@@ -1,0 +1,14 @@
+My plan for this project.
+
+
+Have 1 page, that is updated thru Ajax calls to URL's.
+Therefore, Flask with be a rest API, frontend will be seperate
+
+Sections:
+    Home - Overview
+    Personal
+    Programming
+    Work
+    Streaming
+    Hobbies
+    Contact
