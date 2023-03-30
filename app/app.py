@@ -1,12 +1,12 @@
 from flask import Flask, render_template, jsonify, request, url_for
 
 
-from app.views import simple_page
+from app.views import views
 
 
 def create_app():
     app = Flask(__name__)
-    app.register_blueprint(simple_page)
+    app.register_blueprint(views)
 
 
     @app.route('/')

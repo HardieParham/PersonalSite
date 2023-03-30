@@ -1,16 +1,34 @@
 from flask import Blueprint, jsonify, render_template
 
 
-simple_page = Blueprint('simple_page', __name__, template_folder='templates')
+views = Blueprint('views', __name__, template_folder='templates')
 
 
-#Create one of these for each 'page'
-@simple_page.route('/hobbies')
+#A route for AJAX to fetch for each 'page'
+@views.route('/overview')
+def overview():
+    return render_template('overview.html')
+
+@views.route('/personal')
+def personal():
+    return render_template('personal.html')
+
+@views.route('/programming')
+def programming():
+    return render_template('programming.html')
+
+@views.route('/work')
+def work():
+    return render_template('work.html')
+
+@views.route('/streaming')
+def streaming():
+    return render_template('streaming.html')
+
+@views.route('/hobbies')
 def hobbies():
-    # data = {
-    #     'block': 'test'
+    return render_template('hobbies.html')
 
-    # }
-
-    # return jsonify(data)
-    return render_template('test.html')
+@views.route('/contact')
+def contact():
+    return render_template('contact.html')

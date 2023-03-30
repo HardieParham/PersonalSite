@@ -8,25 +8,25 @@
     <title>Document</title>
 </head>
 
-<header>
+<header id="header">
     <div id="top-bar-container">
         <h1 id="main-name">Hardie <span id="last-name">Parham</span></h1>
 
         <nav id="nav-bar">
             <ul id="nav-bar-list">
-                <li class="nav-bar-item"><a href="#">Home</a></li>
-                <li class="nav-bar-item"><a href="#">Work</a></li>
-                <li class="nav-bar-item"><a href="#">Programming</a></li>
-                <li class="nav-bar-item"><a href="#">Personal</a></li>
-                <li class="nav-bar-item"><a href="#">Other</a></li>
-                <li class="nav-bar-item"><a href="#">Contact</a></li>
+                <button class="nav-bar-item" id="btn_home">Home</button>
+                <button class="nav-bar-item" id="btn_work_history">Work History</button>
+                <button class="nav-bar-item" id="btn_programming">Programming</button>
+                <button class="nav-bar-item" id="btn_background">Background</button>
+                <button class="nav-bar-item" id="btn_personal_life">Personal Life</button>
+                <button class="nav-bar-item" id="btn_contact">Contact</button>
             </ul>
         </nav>
     </div>
 </header>
 
 
-<body>
+<body id="body">
 
     <button id="update">Add Card</button>
 
@@ -47,8 +47,8 @@
 
 
 
-<footer>
-
+<footer id="footer">
+    <p>Copyright HP 2023</p>
 </footer>
 
 
@@ -56,30 +56,92 @@
 <script src="../static/scripts/home.js"></script>
 
 <style>
-    #top-bar-container {
-    display: flex; /* or inline-flex */
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+
+    #header {
+        background-color: beige;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
+    #top-bar-container {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #top-bar-name {
+        padding: 0;
+        margin: 0;
+    }
+
+    #main-name {
+        padding: 10px;
+        margin: 0;
+    }
+
+
     #nav-bar-list {
-    display: inline-flex; /* or inline-flex */
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: space-around;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: inline-flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-around;
+
     }
 
     .nav-bar-item {
-        padding: 5px
+        padding: 25px;
+        margin: 0px;
+        border: none;
+        background: none;
+    }
+
+    .nav-bar-item:hover{
+        background-color: aqua;
+        background-image: none;
+    }
+
+    #body {
+        padding: 0px;
+        margin: 0px;
+        background-color:cornflowerblue;
     }
 
     .card-image {
-        width: 100%
+        width: 50%
     }
+
+    .test {
+        color: blue;
+    }
+
+
+    #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-left: 5%;
+        color: white;
+        background-color: black;
+    }
+
 
     @media screen and (max-width: 600px) { 
         #last-name {
+            display: none;
+        }
+
+        #nav-bar-list {
             display: none;
         }
     }
