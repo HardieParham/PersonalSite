@@ -27,7 +27,7 @@ def streaming():
 
 @views.route('/hobbies')
 def hobbies():
-    return render_template('hobbies.html')
+    return render_template('test.html')
 
 @views.route('/contact')
 def contact():
