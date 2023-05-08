@@ -1,4 +1,4 @@
-// $ is a placeholder for saying 'jQuery'
+// $() is used for selecting items in the DOM
 
 
 
@@ -36,7 +36,14 @@ $(document).ready(function(){
         // });  
 });
 
-
+function navbarToggle() {
+    var x = document.getElementById("nav-bar-list");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
 
 
 // xhr.onload = function() {

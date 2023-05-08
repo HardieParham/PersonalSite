@@ -13,6 +13,10 @@ def create_app():
     def home():
         return render_template('home.html')
 
+
+    @app.route('/test')
+    def test():
+        return render_template('test.html')
     return app
 
 

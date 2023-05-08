@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/stylesheet.min.css"/>
     <title>Document</title>
 </head>
+
+
 
 <header id="header">
     <div id="top-bar-container">
@@ -19,11 +21,16 @@
                 <button class="nav-bar-item" id="btn_programming">Programming</button>
                 <button class="nav-bar-item" id="btn_background">Background</button>
                 <button class="nav-bar-item" id="btn_personal_life">Personal Life</button>
-                <button class="nav-bar-item" id="btn_contact">Contact</button>
+                <button class="nav-bar-item" id="btn_contact">Contact</button>    
             </ul>
+            <a href="javascript:void(0);" class="nav-bar-icon" onclick="navbarToggle()">
+                    <i class="fa fa-bars"></i>
         </nav>
+
     </div>
 </header>
+
+
 
 
 <body id="body">
@@ -38,7 +45,7 @@
         </div>
     </div>
 
-    <button id="test">Test Content</button>
+    <button id="hide">Test Content</button>
     <div id="container"></div>
 
 </body>
@@ -46,105 +53,11 @@
 
 
 
-
 <footer id="footer">
-    <p>Copyright HP 2023</p>
+    <p>Custom built by Hardie Parham in 2023 😄</p>
 </footer>
-
 
 <script src="../static/scripts/jquery.js"></script>
 <script src="../static/scripts/home.js"></script>
-
-<style>
-
-    #header {
-        background-color: beige;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    #top-bar-container {
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 0;
-        padding-bottom: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #top-bar-name {
-        padding: 0;
-        margin: 0;
-    }
-
-    #main-name {
-        padding: 10px;
-        margin: 0;
-    }
-
-
-    #nav-bar-list {
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-        display: inline-flex;
-        flex-direction: row;
-        list-style-type: none;
-        justify-content: space-around;
-
-    }
-
-    .nav-bar-item {
-        padding: 25px;
-        margin: 0px;
-        border: none;
-        background: none;
-    }
-
-    .nav-bar-item:hover{
-        background-color: aqua;
-        background-image: none;
-    }
-
-    #body {
-        padding: 0px;
-        margin: 0px;
-        background-color:cornflowerblue;
-    }
-
-    .card-image {
-        width: 50%
-    }
-
-    .test {
-        color: blue;
-    }
-
-
-    #footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding-left: 5%;
-        color: white;
-        background-color: black;
-    }
-
-
-    @media screen and (max-width: 600px) { 
-        #last-name {
-            display: none;
-        }
-
-        #nav-bar-list {
-            display: none;
-        }
-    }
-</style>
 
 </html>

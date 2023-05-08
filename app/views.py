@@ -21,14 +21,6 @@ def programming():
 def work():
     return render_template('work.html')
 
-@views.route('/streaming')
-def streaming():
-    return render_template('streaming.html')
-
-@views.route('/hobbies')
-def hobbies():
-    return render_template('test.html')
-
 @views.route('/contact')
 def contact():
     return render_template('contact.html')
