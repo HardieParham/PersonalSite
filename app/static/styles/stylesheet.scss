@@ -1,5 +1,9 @@
 @import './variables';
 @import './content';
+@import './medium_screen';
+@import './mobile_screen';
+
+
 
 @mixin zero_padding_margin {
     margin: 0;
@@ -87,43 +91,4 @@
     padding-left: 5%;
     color: $white;
     background-color: $space;
-}
-
-
-@media screen and (max-width: 1070px) {
-    ul {
-        padding-inline-start: 0%;
-    }
-
-    #top-bar-container {
-        @include zero_padding_margin();
-        border-color: $black;
-        border-width: 2px;
-    }
-
-    #main-name {
-        width: 100%;
-        text-align: center;
-    }
-    
-    #nav-bar-list {
-        width: 100%;
-        background-color: $payne;
-    }
-
-    .nav-bar-item{
-        padding: 10px 0px;
-        flex-grow: 1;
-    }
-}
-
-
-@media screen and (max-width: 400px) {    
-    .nav-bar-item {
-        font-size: 50%;
-    }
-
-    #footer {
-        font-size: 50%;
-    }
 }
