@@ -10,7 +10,7 @@ from flask import Flask, render_template
 from app.views import views
 
 
-my_app = Flask(__name__)
+my_app = Flask(__name__, static_folder='app/static', template_folder='app/templates')
 my_app.register_blueprint(views)
 
 @my_app.route('/')
