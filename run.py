@@ -10,15 +10,15 @@ if __name__ == "__main__":
 # PLAN 
 #
 # FRONTEND
-# Header
-# Navbar
+# Header DONE
+# Navbar DONE
 # Content area with AJAX requests
-# Footer
+# Footer DONE
 # Styling
 # 
 # BACKEND
-# Routes
-# Content
+# Routes DONE
+# Content 
 # Photos / icons
 # 
 # 

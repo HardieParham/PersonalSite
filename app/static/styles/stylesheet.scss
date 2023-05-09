@@ -1,17 +1,21 @@
-// Variables
-$beige: beige;
-$white: white;
-$black: black;
-$blue: blue;
-$aqua: aqua;
+@import './variables';
+@import './content';
 
+@mixin zero_padding_margin {
+    margin: 0;
+    padding: 0;
+}
 
 
 #header {
-    background-color: $beige;
+    @include zero_padding_margin();
+    background-color: $space;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    color: $white;
+
+    span {
+        color: $munsell;
+    }
 }
 
 #top-bar-container {
@@ -24,11 +28,11 @@ $aqua: aqua;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #top-bar-name {
-    padding: 0;
-    margin: 0;
+    @include zero_padding_margin();
 }
 
 #main-name {
@@ -54,27 +58,27 @@ $aqua: aqua;
     margin: 0px;
     border: none;
     background: none;
-}
+    transition: background-color 500ms;
+    color: $white;
 
-.nav-bar-item:hover{
-    background-color: $aqua;
-    background-image: none;
+    &:hover{
+        background-color: $munsell;
+        background-image: none;
+    }
 }
 
 #body {
-    padding: 0px;
-    margin: 0px;
-    background-color:cornflowerblue;
+    @include zero_padding_margin();
+    background-color: $platinum;
 }
 
 .card-image {
-    width: 50%
+    width: 50%;
 }
 
 .test {
-    color: $blue
+    color: $blue;
 }
-
 
 #footer {
     position: absolute;
@@ -82,12 +86,44 @@ $aqua: aqua;
     width: 100%;
     padding-left: 5%;
     color: $white;
-    background-color: $black;
+    background-color: $space;
 }
 
 
-@media screen and (max-width: 1070px) { 
+@media screen and (max-width: 1070px) {
+    ul {
+        padding-inline-start: 0%;
+    }
+
+    #top-bar-container {
+        @include zero_padding_margin();
+        border-color: $black;
+        border-width: 2px;
+    }
+
+    #main-name {
+        width: 100%;
+        text-align: center;
+    }
+    
     #nav-bar-list {
-        display: none;
+        width: 100%;
+        background-color: $payne;
+    }
+
+    .nav-bar-item{
+        padding: 10px 0px;
+        flex-grow: 1;
+    }
+}
+
+
+@media screen and (max-width: 400px) {    
+    .nav-bar-item {
+        font-size: 50%;
+    }
+
+    #footer {
+        font-size: 50%;
     }
 }
