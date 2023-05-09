@@ -8,7 +8,6 @@
 # @my_app.route('/')
 # def base():
 #     return render_template('base.html')
-    
 # if __name__ == "__main__":
 #     my_app.run(debug=False)
 

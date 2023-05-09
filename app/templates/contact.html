@@ -1,10 +1,14 @@
 <h1>This is the Contact Page!</h1>
 
-<form>
-    <label>Blah</label>
-    <label>Bluh</label>
-    <label>Bloh</label>
-    <input type="email">
-    <button type="submit">CLick me</button>
-
+<form action="/email" method="post" enctype="text/plain">
+    <label>Name: </label>
+    <input type="text" name="name"><br>
+    <label>Subject: </label>
+    <input type="text" name="subject"><br>
+    <label>E-mail: </label>
+    <input type="text" name="email"><br>
+    <label>Content: </label>
+    <input type="text" name="content"><br>
+    <input type="submit" value="send">
 </form>
+
