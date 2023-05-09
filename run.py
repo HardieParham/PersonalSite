@@ -1,7 +1,8 @@
 from app.app import create_app
 
-app = create_app()
-app.run()
+if __name__ == "__main__":
+    app = create_app()  
+    app.run(debug=False)
 
 
 
