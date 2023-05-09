@@ -3,19 +3,21 @@ import datetime
 
 #External Imports
 from flask import Flask, render_template, request
-from flask_mail import Mail, Message
+from flask_mailman import Mail, EmailMessage
 
 #Local Imports
 from app.views import views
+from app.config import config
 
 
 def create_app():
     # mail = Mail()
     app = Flask(__name__)
+    app.config.from_object(config)
     app.config['MAIL_DEFAULT_SENDER'] = 'hparham@smu.edu'
     app.register_blueprint(views)
     mail=Mail(app)
-    # mail.init_app(app)
+
 
     @app.route('/')
     def base():
@@ -24,19 +26,18 @@ def create_app():
 
     @app.route('/email', methods=['POST'])
     def email():
-        sender_name = request.form.get('name')
-        subject = request.form.get('subject')
-        sender_email = request.form.get('email')
-        content = request.form.get('content')
-
-        msg = Message(
-            subject=f'{sender_name}: {subject}',
-            recipients=['hparham865@gmail.com'],
-            body=f'{sender_name}: {sender_email}: {content}',
-            date=datetime.datetime.now(),
+        with mail.get_connection() as conn:
+            email = EmailMessage(
+                subject=request.form.get('subject'),
+                body='',
+                from_email='hparham865@gmail.com',
+                to='hparham865@gmail.com',
+                connection=conn
             )
-        
-        mail.send(msg)
+            try:
+                email.send()
+            except:
+                return '<h1>This failed bro</h1>'
 
         return '<h1>Thanks!</h1>'
     
