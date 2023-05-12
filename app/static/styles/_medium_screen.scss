@@ -1,26 +1,34 @@
-@media screen and (max-width: 1070px) {
-    ul {
-        padding-inline-start: 0%;
-    }
-
-    #top-bar-container {
-        @include zero_padding_margin();
-        border-color: $black;
-        border-width: 2px;
-    }
-
-    #main-name {
+@media screen and (max-width: 1070px) {    
+    #header {
+        padding-left: 0px;
+        padding-right: 0px;
         width: 100%;
-        text-align: center;
+        
+        #main-name {
+            width: 100%;
+            text-align: center;
+        }
+        
+        #nav-bar-list {
+            width: 100%;
+            background-color: $payne;
+            
+            .nav-bar-item{
+                padding-inline-start: 0%;
+                padding: 10px 0px;
+                flex-grow: 1;
+            }
+        }
     }
+
     
-    #nav-bar-list {
-        width: 100%;
-        background-color: $payne;
-    }
-
-    .nav-bar-item{
-        padding: 10px 0px;
-        flex-grow: 1;
-    }
+    
+    
 }
+
+// #top-bar-container {
+//     // @include zero-margin-and-padding();
+//     width: 100%;
+//     border-color: $black;
+//     border-width: 2px;
+// }
