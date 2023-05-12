@@ -1,3 +1,5 @@
 class config:
-    test= 'test'
-    
+    MAIL_SERVER=''
+    MAIL_PORT=''
+    MAIL_USERNAME=''
+    MAIL_PASSWORD=''

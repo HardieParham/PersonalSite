@@ -17,7 +17,7 @@ $(document).ready(function(){
     $('#btn_home').click(function(){
     
         const xhr = new XMLHttpRequest();
-        const container = document.getElementById('container');
+        const container = document.getElementById('content-container');
         
         xhr.onload = function() {
             if (this.status === 200) {
@@ -33,7 +33,7 @@ $(document).ready(function(){
     $('#btn_personal_life').click(function(){
         
         const xhr = new XMLHttpRequest();
-        const container = document.getElementById('container');
+        const container = document.getElementById('content-container');
         
         xhr.onload = function() {
             if (this.status === 200) {
@@ -49,7 +49,7 @@ $(document).ready(function(){
     $('#btn_work_history').click(function(){
         
         const xhr = new XMLHttpRequest();
-        const container = document.getElementById('container');
+        const container = document.getElementById('content-container');
         
         xhr.onload = function() {
             if (this.status === 200) {
@@ -65,7 +65,7 @@ $(document).ready(function(){
     $('#btn_programming').click(function(){
         
         const xhr = new XMLHttpRequest();
-        const container = document.getElementById('container');
+        const container = document.getElementById('content-container');
         
         xhr.onload = function() {
             if (this.status === 200) {
@@ -81,7 +81,7 @@ $(document).ready(function(){
     $('#btn_contact').click(function(){
         
         const xhr = new XMLHttpRequest();
-        const container = document.getElementById('container');
+        const container = document.getElementById('content-container');
         
         xhr.onload = function() {
             if (this.status === 200) {

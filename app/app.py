@@ -14,7 +14,7 @@ def create_app():
     # mail = Mail()
     app = Flask(__name__)
     app.config.from_object(config)
-    app.config['MAIL_DEFAULT_SENDER'] = 'hparham@smu.edu'
+    #app.config['MAIL_DEFAULT_SENDER'] = 'hparham@smu.edu'
     app.register_blueprint(views)
     mail=Mail(app)
 

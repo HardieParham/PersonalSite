@@ -4,7 +4,7 @@
     }
 
     #top-bar-container {
-        @include zero_padding_margin();
+        // @include zero_padding_margin();
         border-color: $black;
         border-width: 2px;
     }
