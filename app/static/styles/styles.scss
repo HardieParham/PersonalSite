@@ -98,11 +98,14 @@
         position: absolute;
         bottom: 0;
         width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         height: 2.5rem; 
         
         #footer-text {
             margin-top: 8px;
-            margin-left: 5%;
+            // margin-left: 5%;
             @media screen and (max-width: $small) {
                 font-size: 75%;
             }
