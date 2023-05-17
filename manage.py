@@ -7,15 +7,15 @@ import click
 from flask import current_app, url_for
 from flask.cli import FlaskGroup
 
-from appname import create_app
-from appname.models import db
+from app.app import create_app
+from app.models import *
 
 
 def create_app_with_config(*args):
     # default to dev config because no one should use this in
     # production anyway
     env = os.environ.get('APPNAME_ENV', 'dev')
-    return create_app('appname.settings.%sConfig' % env.capitalize())
+    return create_app() #'appname.settings.%sConfig' % env.capitalize())
 
 
 @click.group(cls=FlaskGroup, create_app=create_app_with_config)
@@ -29,7 +29,7 @@ def create_all():
         your SQLAlchemy models
     """
 
-    db.create_all()
+    # db.create_all()
 
 
 @cli.command()
