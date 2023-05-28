@@ -1,8 +1,5 @@
 @import './variables';
 @import './content';
-// @import './medium_screen';
-// @import './mobile_screen';
-
 
 @mixin zero-margin-and-padding($m: 0px, $p: 0px) {
     margin: $m;
@@ -107,27 +104,47 @@
             margin-top: 8px;
             // margin-left: 5%;
             @media screen and (max-width: $small) {
-                font-size: 75%;
+                font-size: 65%;
             }
         }
     }
 
     #content-container{
-        h2 {
+        h2, h1 {
             margin: 0px;
+            text-align: center;
+            @media screen and (max-width: $small) {
+                font-size: 75%;
+            }
         }
         p {
             width: 60%;
             text-align: center;
+            @media screen and (max-width: $small) {
+                font-size: 75%;
+            }
         }
-        img {
+        .image {
             width: 60%;
             max-width: 600px;
             height: auto;
             border-radius: 10px;
             margin-bottom: 25px;
         }
-
+        .image-wrap {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .image-wrap-image {
+            width: 60%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
 
     }
 }
