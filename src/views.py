@@ -1,16 +1,11 @@
-#standard imports
 import datetime
 
-#External Imports
 from flask import Blueprint, jsonify, render_template, request
-# from flask_mail import Mail, Message
 
 
 views = Blueprint('views', __name__, template_folder='templates')
-# mail = Mail()
 
-
-#A route for AJAX to fetch for each 'page'
+# A route for AJAX to fetch for each 'page'
 @views.route('/home')
 def home():
     return render_template('home.html')
