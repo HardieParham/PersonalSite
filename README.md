@@ -1,7 +1,6 @@
 # PersonalSite
 
-Flask and Vanilla Javascript website for my personal profolio. Site is run thru Heroku
-
+Flask and Vanilla Javascript website for my personal profolio. Site is hosted on Heroku
 
 TODO: Finalize base app
 
