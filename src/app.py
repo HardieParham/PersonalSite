@@ -18,7 +18,7 @@ def create_app():
 
     @app.route('/')
     def three():
-        return render_template('three.html')
+        return render_template('index.html')
 
     @app.route('/old')
     def old():
