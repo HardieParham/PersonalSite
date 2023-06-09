@@ -11,7 +11,7 @@ from src.config import config
 
 
 def create_app():
-    app = Flask(__name__)
+    app = Flask(__name__, template_folder='dist')
     app.config.from_object(config)
     app.register_blueprint(views)
     mail = Mail(app)
