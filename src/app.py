@@ -16,9 +16,12 @@ def create_app():
     app.register_blueprint(views)
     mail = Mail(app)
 
-
     @app.route('/')
-    def base():
+    def three():
+        return render_template('three.html')
+
+    @app.route('/old')
+    def old():
         return render_template('base.html')
 
     @app.route('/process_email', methods=['POST'])
