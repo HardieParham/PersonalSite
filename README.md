@@ -1,7 +1,6 @@
 # PersonalSite
-
-Flask and Vanilla Javascript website for my personal profolio. Site is hosted on Heroku
+Flask and Ajax Javascript website for my personal profolio. Site is hosted on Heroku
 
 TODO: Finalize base app
-
-TODO: Might change frontend to be React or Svelte
+TODO: Add contact form
+TODO: Will make a major change to a Three-JS frontend
