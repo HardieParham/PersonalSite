@@ -16,11 +16,11 @@ def create_app():
     app.register_blueprint(views)
     # mail = Mail(app)
 
-    @app.route('/')
+    @app.route('/new')
     def three():
         return render_template('home.html')
 
-    @app.route('/old')
+    @app.route('/')
     def old():
         return render_template('base.html')
 
