@@ -16,9 +16,9 @@ def create_app():
     app.register_blueprint(views)
     # mail = Mail(app)
 
-    @app.route('/new')
-    def three():
-        return render_template('home.html')
+    @app.route('/commands')
+    def commands():
+        return render_template('commands.html')
 
     @app.route('/')
     def old():
