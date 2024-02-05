@@ -1,5 +1,3 @@
-import datetime
-
 from flask import Blueprint, jsonify, render_template, request
 
 
@@ -25,21 +23,3 @@ def programming():
 @views.route('/contact')
 def contact():
     return render_template('contact.html')
-
-# @views.route('/email', methods=['POST'])
-# def email():
-#     sender_name = request.form.get('name')
-#     subject = request.form.get('subject')
-#     sender_email = request.form.get('email')
-#     content = request.form.get('content')
-
-#     msg = Message(
-#         subject=f'{sender_name}: {subject}',
-#         recipients=['hparham865@gmail.com'],
-#         body=f'{sender_name}: {content}',
-#         sender=sender_email,
-#         date=datetime.datetime.now(),
-#         )
-#     # mail.send(msg)
-
-#     return '<h1>Thanks!</h1>'

@@ -1,6 +1,7 @@
 # PersonalSite
-Flask and Ajax Javascript website for my personal profolio. Site is hosted on Heroku
+Flask and jQuery website for my personal profolio. Initial site was hosted on Heroku. In 10/2023, transfered site to GCP.
 
-TODO: Finalize base app
-TODO: Add contact form
-TODO: Will make a major change to a Three-JS frontend
+## To-do's
+- Finalize HTML content with updated info
+- Edit SCSS to work best with content
+- Add Contact Page and Functionality

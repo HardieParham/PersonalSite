@@ -4,6 +4,11 @@ from src.views import views
 
 
 def create_app():
+    """Main Flask factory function. Will spin up an instance of the site.
+
+    Returns:
+        Flask: The running flask intance.
+    """
     app = Flask(__name__, template_folder='dist')
     app.register_blueprint(views)
 
