@@ -1,0 +1,8 @@
+Codes: ASCE, AISC, IBC, ACI, NDS
+Certifications: OSHA 30, Subpart R
+Materials: Steel, Concrete, Masonry, Timber
+Software: MS Excel, MS Suite, Bluebeam Revu, RISA, RAM Structural, SP Column, Tekkla Structures
+BIM: Revit, AutoCAD, Procore, Autodesk Build
+Programming: VBA, Python, C#, GDScript, Google AppsScript
+Project Types: Battery Plant, Industrial press/stamping, Industrial Assembly, Datacenter, Fire Stations, Office, Workshop, Truck and Car Storage 	Lot, Public and Private Schools, Gymnasiums, Churches, Single-unit commercial, Mid-rise residential
+Soft Skills: Technical Communication, Project Management, Project Budget Management, Cost Estimation, Collaboration, Adaptability, Construction 	Administration
