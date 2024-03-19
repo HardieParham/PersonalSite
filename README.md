@@ -1,7 +1,29 @@
-# PersonalSite
-Flask and jQuery website for my personal profolio. Initial site was hosted on Heroku. In 10/2023, transfered site to GCP.
 
-## To-do's
-- Finalize HTML content with updated info
-- Edit SCSS to work best with content
-- Add Contact Page and Functionality
+# Hardie's Personal Site
+
+A personal profollio site to showcase some of my work experience, coding projects, and personal hobbies.
+
+
+## Pages
+
+- Home 
+- Work Experience
+- Coding Projects
+- Personal Life
+- Contact Page [WIP]
+
+
+## Used By
+
+Primarily myself, but anybody who wants to see!
+
+
+## Authors
+
+- [@crazymugg](https://www.github.com/crazymugg)
+
+
+## License
+
+[Apache](https://choosealicense.com/licenses/apache/)
+
