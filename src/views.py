@@ -3,7 +3,7 @@ from flask import Blueprint, jsonify, render_template, request
 
 views = Blueprint('views', __name__, template_folder='templates')
 
-# A route for AJAX to fetch for each 'page'
+#Routes for JQuery to fetch for each 'page'
 @views.route('/home')
 def home():
     return render_template('home.html')
