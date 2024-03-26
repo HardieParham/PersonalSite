@@ -1,138 +1,31 @@
-// $() is used for selecting items in the DOM
+/**
+ * function to retrieve html content from a provided URL 
+ * @param {String} pageid the URL for JQuery to fetch. Must start with a forward slash. ex: '/home' 
+ */
+function getPage(pageid){
+    //console.log(pageid)
+    const xhr = new XMLHttpRequest();
+    const container = document.getElementById('content-container');
+        
+    xhr.onload = function() {
+        if (this.status === 200) {
+                container.innerHTML = xhr.responseText;
+            } else {
+                console.warn('Did not recieve 200 response code.')
+            }};
 
+    xhr.open('get', pageid);
+    xhr.send();
+}
 
 
 /**
- * Adding AJAX request endpoints for each navbar button
- * 
- * TODO
- * Condense this as it is a lot of repeated code.
+ * Function to assign NavBar buttons to their respetive URL's onload of base page.
  */
 $(document).ready(function(){
-    $("#hide").click(function(){
-        $(this).hide();
-        });
-    
-
-    $('#btn_home').click(function(){
-    
-        const xhr = new XMLHttpRequest();
-        const container = document.getElementById('content-container');
-        
-        xhr.onload = function() {
-            if (this.status === 200) {
-                    container.innerHTML = xhr.responseText;
-                } else {
-                    console.warn('Did not recieve 200 response code.')
-                }};
-        xhr.open('get', '/home');
-        xhr.send();
-    });
-
-
-    $('#btn_personal_life').click(function(){
-        
-        const xhr = new XMLHttpRequest();
-        const container = document.getElementById('content-container');
-        
-        xhr.onload = function() {
-            if (this.status === 200) {
-                    container.innerHTML = xhr.responseText;
-                } else {
-                    console.warn('Did not recieve 200 response code.')
-                }};
-        xhr.open('get', '/personal');
-        xhr.send();
-    });
-
-
-    $('#btn_work_history').click(function(){
-        
-        const xhr = new XMLHttpRequest();
-        const container = document.getElementById('content-container');
-        
-        xhr.onload = function() {
-            if (this.status === 200) {
-                    container.innerHTML = xhr.responseText;
-                } else {
-                    console.warn('Did not recieve 200 response code.')
-                }};
-        xhr.open('get', '/work');
-        xhr.send();
-    });
-
-
-    $('#btn_programming').click(function(){
-        
-        const xhr = new XMLHttpRequest();
-        const container = document.getElementById('content-container');
-        
-        xhr.onload = function() {
-            if (this.status === 200) {
-                    container.innerHTML = xhr.responseText;
-                } else {
-                    console.warn('Did not recieve 200 response code.')
-                }};
-        xhr.open('get', '/programming');
-        xhr.send();
-    });
-
-
-    $('#btn_contact').click(function(){
-        
-        const xhr = new XMLHttpRequest();
-        const container = document.getElementById('content-container');
-        
-        xhr.onload = function() {
-            if (this.status === 200) {
-                    container.innerHTML = xhr.responseText;
-                } else {
-                    console.warn('Did not recieve 200 response code.')
-                }};
-        xhr.open('get', '/contact');
-        xhr.send();
-    });
-    
-    
-    
-        // $.getJSON('/card', {
-        //     // Parameters to pass thru
-        // }, function(data) {
-        //     $('#card-heading').text(data['card-heading']);
-        //     document.getElementById('card-image').src=data['card-image'];
-        //     $('#card-description').text(data['card-description'])
-        //     });
-        // });  
+    $('#btn_home').on('click', function(){ getPage('/home')} )
+    $('#btn_personal_life').on('click', function(){ getPage('/personal')} )
+    $('#btn_work_history').on('click', function(){ getPage('/work')})
+    $('#btn_programming').on('click', function(){ getPage('/programming')} )
+    $('#btn_contact').on('click', function(){ getPage('/contact')} )
 });
-
-// function navbarToggle() {
-//     var x = document.getElementById("nav-bar-list");
-//     if (x.style.display === "block") {
-//       x.style.display = "none";
-//     } else {
-//       x.style.display = "block";
-//     }
-//   }
-
-
-// xhr.onload = function() {
-//     if (this.status === 200) {
-//         container.innerHTML = xhr.responseText;
-//     } else {
-//         console.warn('Did not recieve 200 response code.')
-//     }
-
-// }
-
-
-// xhr.open('get', '/hobbies');
-// xhr.send();
-
-
-
-
-// var loc = window.location.pathname;
-// var dir = loc.substring(0, loc.lastIndexOf('/'));
-
-// console.log(loc)
-// console.log(dir)
