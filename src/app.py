@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory, send_file
 
 from src.views import views
 
@@ -19,8 +19,14 @@ def create_app():
     
     # Seconday route to show my personal resume in the browser
     @app.route('/resume')
-    def send_resume():
+    def view_resume():
         path = "files/2024HardieParhamResumeV3.pdf"
         return send_from_directory('static', path)
+    
+    # Seconday route to download my personal resume as an attachment
+    @app.route('/sendresume')
+    def send_resume():
+        path = "static/files/2024HardieParhamResumeV3.pdf"
+        return send_file(path, as_attachment=True)
     
     return app

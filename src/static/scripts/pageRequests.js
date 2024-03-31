@@ -27,5 +27,5 @@ $(document).ready(function(){
     $('#btn_personal_life').on('click', function(){ getPage('/personal')} )
     $('#btn_work_history').on('click', function(){ getPage('/work')})
     $('#btn_programming').on('click', function(){ getPage('/programming')} )
-    $('#btn_contact').on('click', function(){ getPage('/test')} )
+    $('#btn_contact').on('click', function(){ getPage('/contact')} )
 });
