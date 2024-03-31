@@ -119,6 +119,7 @@
         }
         h3, h4, h5, h6, p {
             width: 60%;
+            max-width: 600px;
             text-align: center;
             @media screen and (max-width: $small) {
                 font-size: 75%;
@@ -129,7 +130,7 @@
             max-width: 600px;
             height: auto;
             border-radius: 25px;
-            margin-bottom: 25px;
+            // margin-bottom: 25px;
         }
         .image-wrap {
             display: flex;
