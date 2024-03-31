@@ -23,3 +23,7 @@ def programming():
 @views.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@views.route('/test')
+def test_page():
+    return render_template('test.html')
