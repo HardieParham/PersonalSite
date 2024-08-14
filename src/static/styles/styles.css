@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   background-color: #DCDCDD;
-  font-size: 1.25em;
+  font-size: 1.2em;
 }
 #body #header {
   display: flex;
@@ -23,7 +23,7 @@
     padding-right: 5%;
   }
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 450px) {
   #body #header {
     width: 100%;
     padding-left: 0%;
@@ -84,13 +84,6 @@
   background-color: #1985A1;
   background-image: none;
 }
-#body #content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: black;
-  padding-bottom: 2.5rem;
-}
 #body #footer {
   background-color: #46494C;
   color: white;
@@ -110,24 +103,41 @@
     font-size: 65%;
   }
 }
-#body #content-container h2, #body #content-container h1 {
+#body #content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  padding-bottom: 2.5rem;
+}
+#body #content-container h1, #body #content-container h2 {
   margin-top: 25px;
   margin-bottom: 5px;
   text-align: center;
 }
 @media screen and (max-width: 450px) {
-  #body #content-container h2, #body #content-container h1 {
-    font-size: 75%;
+  #body #content-container h1, #body #content-container h2 {
+    font-size: 0.75em;
   }
 }
-#body #content-container h3, #body #content-container h4, #body #content-container h5, #body #content-container h6, #body #content-container p {
+#body #content-container h3, #body #content-container h4, #body #content-container h5, #body #content-container h6 {
   width: 60%;
-  max-width: 600px;
+  max-width: 640px;
   text-align: center;
 }
 @media screen and (max-width: 450px) {
-  #body #content-container h3, #body #content-container h4, #body #content-container h5, #body #content-container h6, #body #content-container p {
-    font-size: 75%;
+  #body #content-container h3, #body #content-container h4, #body #content-container h5, #body #content-container h6 {
+    font-size: 0.75em;
+  }
+}
+#body #content-container p {
+  width: 60%;
+  max-width: 640px;
+  text-align: left;
+}
+@media screen and (max-width: 450px) {
+  #body #content-container p {
+    font-size: 0.75em;
   }
 }
 #body #content-container .subtitle {
@@ -135,8 +145,8 @@
 }
 #body #content-container .image {
   width: 60%;
-  max-width: 600px;
+  max-width: 640px;
   height: auto;
   border-radius: 25px;
   margin-top: 5px;
-}/*# sourceMappingURL=styles.css.map */
+}

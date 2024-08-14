@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     background-color: $platinum;
-    font-size: 1.25em;
+    font-size: 1.20em;
     
     #header {
         display: flex;
@@ -22,16 +22,16 @@
         align-items: center;
         flex-wrap: wrap;
         background-color: $space;
+
         @media screen and (min-width: $medium) {
             padding-left: 5%;
             padding-right: 5%;
         }
-        @media screen and (max-width: $medium) {
+        @media screen and (max-width: $small) {
             width: 100%;
             padding-left: 0%;
             padding-right: 0%;
         }
-
 
         #main-name {
             @include zero-margin-and-padding(0px, 10px);
@@ -83,14 +83,6 @@
         }
     }
     
-    #content-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: black;
-        padding-bottom: 2.5rem;
-    }
-    
     #footer {
         background-color: $space;
         color: $white;
@@ -110,30 +102,44 @@
             }
         }
     }
-
+    
     #content-container{
-        h2, h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        padding-bottom: 2.5rem;
+
+        h1, h2 {
             margin-top: 25px;
             margin-bottom: 5px;
             text-align: center;
             @media screen and (max-width: $small) {
-                font-size: 75%;
+                font-size: 0.75em;
             }
         }
-        h3, h4, h5, h6, p {
-            width: 60%;
-            max-width: 600px;
+        h3, h4, h5, h6 {
+            width: $item-width;
+            max-width: $item-max-width;
             text-align: center;
             @media screen and (max-width: $small) {
-                font-size: 75%;
+                font-size: 0.75em;
+            }
+        }
+        p {
+            width: $item-width;
+            max-width: $item-max-width;
+            text-align: left;
+            @media screen and (max-width: $small) {
+                font-size: 0.75em;
             }
         }
         .subtitle {
             margin-top: 4px;
         }
         .image {
-            width: 60%;
-            max-width: 600px;
+            width: $item-width;
+            max-width: $item-max-width;
             height: auto;
             border-radius: 25px;
             margin-top: 5px;
