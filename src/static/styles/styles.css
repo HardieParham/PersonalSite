@@ -150,3 +150,12 @@
   border-radius: 25px;
   margin-top: 5px;
 }
+#body #content-container .card .card-title {
+  width: 10%;
+}
+#body #content-container .card .card-image {
+  width: 10%;
+}
+#body #content-container .card .card-text {
+  width: 10%;
+}

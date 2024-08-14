@@ -144,5 +144,21 @@
             border-radius: 25px;
             margin-top: 5px;
         }
+
+        .card {
+            .card-title {
+                width: 10%;
+            }
+
+            .card-image {
+                width: 10%;
+            }
+
+            .card-text {
+                width: 10%;
+            }
+        }
+
+
     }
 }
