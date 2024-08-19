@@ -29,4 +29,10 @@ def create_app():
         path = "static/files/Hardie Parham Resume 2024 V3.pdf"
         return send_file(path, as_attachment=True)
     
+
+    @app.errorhandler(404) 
+    def not_found(e): 
+        return render_template("404.html") 
+
+
     return app

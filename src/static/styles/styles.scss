@@ -145,20 +145,32 @@
             margin-top: 5px;
         }
 
-        .card {
-            .card-title {
-                width: 10%;
-            }
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
 
-            .card-image {
-                width: 10%;
-            }
+            .card {
+                margin: 5px;
+                outline-style:solid;
+                outline-color: black;
+                outline-width: 2px;
+        
+                .card-title {
+                    width: 150px;
+                }
 
-            .card-text {
-                width: 10%;
+                .card-image {
+                    width: 150px;
+                }
+
+                .card-text {
+                    width: 150px;
+                }
             }
         }
-
-
     }
 }
