@@ -158,7 +158,11 @@
                 outline-style:solid;
                 outline-color: black;
                 outline-width: 2px;
+                // border-radius: 5px 15px; 
+                border-radius: 15px; 
+                background-color: white;
         
+
                 .card-title {
                     width: 150px;
                 }
