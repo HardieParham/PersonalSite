@@ -4,7 +4,7 @@
 A personal profollio site to showcase some of my work experience, coding projects, and personal hobbies.
 
 
-## Pages
+### Pages
 
 - Home 
 - Personal Life
@@ -13,12 +13,12 @@ A personal profollio site to showcase some of my work experience, coding project
 - Contact Page [WIP]
 
 
-## Used By
+### Used By
 
 Primarily myself, but anybody who wants to see!
 
 
-## Tech Stack
+### Tech Stack
 
 ***backend***
 - Python
@@ -30,17 +30,17 @@ Primarily myself, but anybody who wants to see!
 - Sass
 - Jquery
 
-***Deployment***
+***deployment***
 - Docker
 - GCP
 
 
-## Authors
+### Authors
 
 - [@HardieParham](https://www.github.com/hardieparham)
 
 
-## License
+### License
 
 [Apache](https://choosealicense.com/licenses/apache/)
 
