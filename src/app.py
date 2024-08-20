@@ -4,7 +4,7 @@ from src.views import views
 
 
 def create_app():
-    """Main Flask factory function. Will spin up an instance of the site.
+    """Main Flask factory function. Will spin up an instance of the site. Use with Waitress.
 
     Returns:
         Flask: The running flask intance.
@@ -29,7 +29,7 @@ def create_app():
         path = "static/files/Hardie Parham Resume 2024 V3.pdf"
         return send_file(path, as_attachment=True)
     
-
+    # Route for "Page not found"
     @app.errorhandler(404) 
     def not_found(e): 
         return render_template("404.html") 

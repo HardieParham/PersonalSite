@@ -163,16 +163,24 @@
                 background-color: white;
         
 
-                .card-title {
-                    width: 150px;
-                }
-
                 .card-image {
-                    width: 150px;
+                    height: 400px;
+                    width: auto;
+                    border-radius: 15px 15px 0px 0px;                
+                    
+                    @media screen and (max-width: $medium) {
+                        padding: 10px 0px;
+                        flex-grow: 1;
+                        font-size: 0.75em;
+                    }
+                    @media screen and (max-width: $small) {
+                        font-size: 0.5em;
+                    }
                 }
 
                 .card-text {
-                    width: 150px;
+                    width: auto;
+                    text-align: center;
                 }
             }
         }
