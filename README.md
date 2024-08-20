@@ -7,9 +7,9 @@ A personal profollio site to showcase some of my work experience, coding project
 ## Pages
 
 - Home 
-- Work Experience
-- Coding Projects
 - Personal Life
+- Work Experience [WIP]
+- Coding Projects [WIP]
 - Contact Page [WIP]
 
 
@@ -18,9 +18,26 @@ A personal profollio site to showcase some of my work experience, coding project
 Primarily myself, but anybody who wants to see!
 
 
+## Tech Stack
+
+***backend***
+- Python
+- Flask
+- Waitress
+
+***frontend***
+- Jinja HTML Templates
+- Sass
+- Jquery
+
+***Deployment***
+- Docker
+- GCP
+
+
 ## Authors
 
-- [@crazymugg](https://www.github.com/crazymugg)
+- [@HardieParham](https://www.github.com/hardieparham)
 
 
 ## License
