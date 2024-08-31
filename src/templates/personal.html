@@ -1,40 +1,81 @@
 <h1>Personal Life</h1>
 <hr/>
 
-<h2><u>Where I've Lived</u></h2>
-<img class="image" src="{{ url_for('static', filename='images/personal/home.jpg') }}" alt="Parham Residence">
-<p>Nashville, TN → Dallas, TX → Brussels, Belgium → Nashville, TN</p>
-<hr/>
-
-<h2><u>Education</u></h2>
-<img class="image" src="{{ url_for('static', filename='images/personal/smu.jpg') }}" alt="Parhams at SMU ">
-<p>Graduated from Southern Methodist University (SMU) in 2017
-    with a B.S. in Civil Engineering and a B.S. in Mechanical Engineering</p>
-<hr/>
-
-<h2><u>Hobbies</u></h2>
-<img class="image" src="{{ url_for('static', filename='images/personal/kickball.jpg') }}" alt="Parham Kickball">
-<p>Video Games, Playing and watching sports, Working Out, Coffee, and Cooking</p>
-<hr/>
-
-<h2><u>Sports</u></h2>
-<img class="image" src="{{ url_for('static', filename='images/personal/gb.jpg') }}" alt="Hardie Parham and Maddy Parham at Green Bay">
-<p>Big fan of: Tennessee Titans, Atlanta Braves, Nashville Predators, SMU Mustangs, Texas Rangers, Liverpool FC, Tennessee Trojans</p>
-<hr/>
-
-<h2><u>Travels</u></h2>
-<img class="image" src="{{ url_for('static', filename='images/personal/turkey.jpg') }}" alt="Hardie Parham in Turkey">
-<img class="image" src="{{ url_for('static', filename='images/personal/uk.jpg') }}" alt="Hardie Parham in the UK">
-<p>Scandinavia, Australia, 42 US States, Central Europe, and Turkey</p>
-<hr/>
 
 <h2><u>Life</u></h2>
-<img class="image" src="{{ url_for('static', filename='images/personal/brussels.jpg') }}" alt="Brussels">
-<img class="image" src="{{ url_for('static', filename='images/personal/willa.jpg') }}" alt="Willa Parham">
-<p>Married my amazing wife and had my first little girl on leap day, Feb 29th 2024!</p>
-<hr/>
+<div class="card-container">
+    <div class="card">
+        <!-- <h2 class="card-title"><u>Sports</u></h2> -->
+        <img class="card-image" src="{{ url_for('static', filename='images/personal/brussels.jpg') }}" alt="Brussels">
+        <p class="card-text">My amazing wife :)</p>
+    </div>
+    <div class="card">
+        <!-- <h2 class="card-title"><u>Sports</u></h2> -->
+        <img class="card-image" src="{{ url_for('static', filename='images/personal/willa.jpg') }}" alt="Willa Parham">
+        <p class="card-text">Willa!! Born on leap day, Feb 29th 2024! </p>
+    </div>
+</div>
 
 
+<h2 class="card-title"><u>Home</u></h2>
+<div class="card-container">
+    <div class="card">
+        <!-- <h2 class="card-title"><u>Sports</u></h2> -->
+        <img class="card-image" src="{{ url_for('static', filename='images/personal/home.jpg') }}" alt="Parham Residence">
+        <p class="card-text">Nashville,  Dallas, Brussels Belgium, Nashville (again)</p>
+    </div>
+
+</div>
+
+
+<h2 class="card-title"><u>Education</u></h2>
+<div class="card-container">
+    <div class="card">
+        <!-- <h2 class="card-title"><u>Sports</u></h2> -->
+        <img class="card-image" src="{{ url_for('static', filename='images/personal/smu.jpg') }}" alt="Parhams at SMU ">
+        <p class="card-text">B.S. in Civil Engineering, SMU 2017 <br> 
+                            B.S. in Mechanical Engineering SMU 2017</p>
+    </div>
+    <div class="card">
+        <!-- <h2 class="card-title"><u>Sports</u></h2> -->
+        <img class="card-image" src="{{ url_for('static', filename='images/personal/smu.jpg') }}" alt="Parhams at SMU ">
+        <p class="card-text">M.E. in Civil Engineering, UTA 2025 </p>
+    </div>
+</div>
+
+
+<h2><u>Hobbies</u></h2>
+<div class="card-container">
+    <div class="card">
+        <!-- <h2 class="card-title"><u>Sports</u></h2> -->
+        <img class="card-image" src="{{ url_for('static', filename='images/personal/soccer.jpg') }}" alt="Parham Kickball">
+        <p class="card-text">Video Games, Playing and watching sports, Working Out, Coffee, and Cooking</p>
+    </div>
+    <div class="card">
+        <!-- <h2 class="card-title"><u>Sports</u></h2> -->
+        <img class="card-image" src="{{ url_for('static', filename='images/personal/gb.jpg') }}" alt="Hardie Parham and Maddy Parham at Green Bay">
+        <p class="card-text">Sports: Tennessee Titans, Atlanta Braves, Nashville Predators, SMU Mustangs, Texas Rangers, Liverpool FC, Tennessee Trojans</p>
+    </div>
+</div>
+
+
+<h2><u>Travelling</u></h2>
+<div class="card-container">
+    <div class="card">
+        <!-- <h2 class="card-title"><u>Sports</u></h2> -->
+        <img class="card-image" src="{{ url_for('static', filename='images/personal/turkey.jpg') }}" alt="Hardie Parham in Turkey">
+        <p class="card-text">Turkey, Australia, and 42 US states</p>
+    </div>
+    <div class="card">
+        <!-- <h2 class="card-title"><u>Sports</u></h2> -->
+        <img class="card-image" src="{{ url_for('static', filename='images/personal/uk.jpg') }}" alt="Hardie Parham in the UK">
+        <p class="card-text">UK, Central Europe, and Scandinavia</p>
+    </div>
+</div>
+
+
+
+{# 
 <div class="card-container">
     <div class="card">
         <!-- <h2 class="card-title"><u>Sports</u></h2> -->
@@ -53,5 +94,5 @@
         <img class="card-image" src="{{ url_for('static', filename='images/personal/uk.jpg') }}" alt="Soccer">
         <p class="card-text">UK</p>
     </div>
-</div>
+</div> #}
 
