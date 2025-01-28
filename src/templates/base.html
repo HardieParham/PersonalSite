@@ -3,17 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/styles/styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/bulma/bulma.min.css') }}">
-    <script src="../static/scripts/jquery.js"></script>
-    <script src="../static/scripts/homeRequest.js"></script>
+
+    {# <script src="../static/scripts/jquery.js"></script> #}
+    {# <script src="../static/scripts/homeRequest.js"></script> #}
     <title>Hardie's Site</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
 </head>
 
 
-<body id="body">
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item"><span>Hardie Parham</span></a>
+            <a class="navbar-item has-text-primary-light">Home</a>
+            <a class="navbar-item has-text-primary-light">Personal Life</a>
+            <a class="navbar-item has-text-primary-light">Work History</a>
+            <a class="navbar-item has-text-primary-light">Programming</a>
+            <a class="navbar-item has-text-primary-light">Contact</a>
+        </div>
+    </nav>
+</body>
+
+
+
+
+
+
+{# <body id="body">
     <header id="header">
         <h1 id="main-name">Hardie <span id="last-name">Parham</span></h1>
         <ul id="nav-bar-list">
@@ -24,7 +42,7 @@
             <button class="nav-bar-item" id="btn_contact">Contact</button>    
         </ul>
         </nav>
-    </header>
+    </header> #}
 
 
     <div id="content-container">
