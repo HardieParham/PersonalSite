@@ -1,6 +1,7 @@
 from flask import Flask, render_template, send_from_directory, send_file
 
 from src.views import views
+from src.dynamics import return_dynamics_results
 
 
 def create_app():
@@ -37,6 +38,13 @@ def create_app():
     def not_found(e):
         print("Rendering 404 Page.")
         return render_template("404.html") 
+    
+    # Route for my dynamics hmwk
+    @app.route('/dynamics')
+    def dynamics():
+        print("Rendering Dynamics Page.")
+        results = return_dynamics_results()
+        return render_template('dynamics.html', data=results)
 
     print("App created.")
     return app
