@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/styles/styles.min.css"/>
     <script src="../static/scripts/jquery.js"></script>
-    <script src="../static/scripts/homeRequest.js"></script>
     <title>Hardie's Site</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
 </head>
@@ -27,6 +26,11 @@
     
 
     <div id="content-container">
+        <h3>Hello There</h3>
+        {% for item in data %}
+            {{ item }}
+        {% endfor %}
+
     </div>
 
 

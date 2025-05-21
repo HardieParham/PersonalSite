@@ -144,5 +144,47 @@
             border-radius: 25px;
             margin-top: 5px;
         }
+
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            .card {
+                margin: 5px;
+                outline-style:solid;
+                outline-color: $space;
+                outline-width: 2px;
+                // border-radius: 5px 15px; 
+                border-radius: 15px; 
+                background-color: white;
+        
+
+                .card-image {
+                    height: 560px;
+                    width: auto;
+                    max-width: min($numbers: 95vw, 600px);
+                    border-radius: 15px 15px 0px 0px;                
+                    
+                    @media screen and (max-width: $medium) {
+                        // margin: 10px 0px;
+                        flex-grow: 1;
+                        font-size: 0.75em;
+                    }
+                    @media screen and (max-width: $small) {
+                        font-size: 0.5em;
+                    }
+                }
+
+                .card-text {
+                    width: auto;
+                    // max-width: 420px;
+                    text-align: center;
+                }
+            }
+        }
     }
 }

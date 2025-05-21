@@ -4,26 +4,43 @@
 A personal profollio site to showcase some of my work experience, coding projects, and personal hobbies.
 
 
-## Pages
+### Pages
 
 - Home 
-- Work Experience
-- Coding Projects
 - Personal Life
+- Work Experience [WIP]
+- Coding Projects [WIP]
 - Contact Page [WIP]
 
 
-## Used By
+### Used By
 
 Primarily myself, but anybody who wants to see!
 
 
-## Authors
+### Tech Stack
 
-- [@crazymugg](https://www.github.com/crazymugg)
+***backend***
+- Python
+- Flask
+- Waitress
+
+***frontend***
+- Jinja HTML Templates
+- Sass
+- Jquery
+
+***deployment***
+- Docker
+- GCP
 
 
-## License
+### Authors
+
+- [@HardieParham](https://www.github.com/hardieparham)
+
+
+### License
 
 [Apache](https://choosealicense.com/licenses/apache/)
 
